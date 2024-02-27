@@ -75,6 +75,13 @@ public class CustomerController {
 
     }
 
+    @GetMapping("/hey")
+
+    public ResponseEntity<String> sayHello() {
+
+        return ResponseEntity.ok("Welcome");
+    }
+
     @DeleteMapping("/deletebyid/{custId}")
 
     public ResponseEntity<String> deleteById(@PathVariable int custId) {
