@@ -76,6 +76,7 @@ public class CustomerController {
 
     }
 
+
     @GetMapping("/hey")
 
     public ResponseEntity<String> sayHello() {
@@ -91,6 +92,13 @@ public class CustomerController {
 
         return ResponseEntity.ok("Data Deleted Successfully");
 
+    }
+
+    @GetMapping("/services")
+
+    public ResponseEntity<String> softservices() {
+
+        return ResponseEntity.ok("Software Development Services");
     }
 
     @GetMapping("/sortbyname")
